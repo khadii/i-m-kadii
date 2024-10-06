@@ -1,0 +1,118 @@
+{
+  "name": "Kadiri Daniel",
+  "role": "Web Developer",
+  "bio": "A passionate web developer with expertise in creating dynamic and responsive web applications. With 3 years of experience in the industry, I have honed my skills in various technologies including HTML, CSS, JavaScript, React.js, and Next.js.",
+  "first_name": "Kadiri",
+  "last_name": "Daniel",
+  "nationality": "Nigerian",
+  "location": "Nigeria, Lagos",
+  "phone": "+2349017169102",
+  "email": "Kadirid9@gmail.com",
+  "github_handle": "Khadi",
+  "languages": ["English", "Igbo/Yoruba"],
+  "years_of_experience": 3,
+
+  "skills": [
+    {
+      "skill": "HTML",
+      "percentage": 90
+    },
+    {
+      "skill": "CSS",
+      "percentage": 85
+    },
+    {
+      "skill": "JavaScript",
+      "percentage": 80
+    },
+    {
+      "skill": "React.js",
+      "percentage": 75
+    },
+    {
+      "skill": "Next.js",
+      "percentage": 85
+    },
+    {
+      "skill": "Node.js",
+      "percentage": 45
+    },
+    {
+      "skill": "MongoDB",
+      "percentage": 65
+    },
+    {
+      "skill": "React Native",
+      "percentage": 65
+    }
+  ],
+  "experiences": [
+    {
+      "year": "Aug. 2023– Present",
+      "title": "Junior Frontend Dev ",
+      "company": "Modiroso consulting services.",
+      "description": "Designing and implementing websites,Maintaining the company’s website and optimized the web functionalities, and creating better user interface,Executing tasks by working with a team,"
+    },
+    {
+      "year": "Jan 2022 – July 2023 ",
+      "title": "intern / Junior Frontend Dev",
+      "company": "Aledoy Academy, Nigeria ",
+      "description": "Maintained the company’s website and optimized the web functionalities, focusing on better user interface,Utilized React and tailwind CSS framework in carrying out the web maintenance,Developed strong analytical skills and the ability to solve practical user interface problems.     "
+    },
+    {
+      "year": "April 2021 – Dec 2021",
+      "title": "Project Engineering Intern",
+      "company": " Tedcom (West Africa) Limited  ",
+      "description": "Conducted data-driven research and analysis to optimize operational processes and decision-making ,focus on operation research methodologies in engineering  Utilized data-driven approaches to support 120+ aspiring engineering students in comprehending the key concepts and applications of engineering principles.Developed strong analytical skills and the ability to solve practical engineering problems under minimal supervision."
+    },
+    {
+      "year": "2015-2021",
+      "title": "Bachelors of Engineering in Mechanical Engineering",
+      "company": "Federal University of  Technology Akure",
+      "description": "Graduated  an upper-second class honours degree."
+    }
+  ],
+  "projects": [
+    {
+      "imageUrl": "/images/kadi.png",
+      "title": "lodge flight complain App",
+      "url": "https://flypalfe-main-15pafu4z6-khadi.vercel.app/"
+    },
+    {
+      "imageUrl": "/images/RESTURANT.png",
+      "title": "Resturant App",
+      "url": "http://kadiriresturant.surge.sh/"
+    },
+    {
+      "imageUrl": "/images/bebo.png",
+      "title": "Crypto exchange App",
+      "url": "https://bebocrypto.netlify.app/"
+    },
+    {
+      "imageUrl": "/images/KADIRI.png",
+      "title": "Chat App",
+      "url": "http://mykadiriapp.surge.sh/"
+    },
+    {
+      "imageUrl": "/images/port.png",
+      "title": "portfolio",
+      "url": "http://kadirisportfolio.surge.sh/"
+    },
+    {
+      "imageUrl": "/images/beboinprogress.png",
+      "title": "Currently working on",
+      "url": "https://tradewithbebo.netlify.app/"
+    }
+  ],
+  "social_links": [
+    {
+      "icon": "/images/linkedin.svg",
+      "url": "https://www.linkedin.com/in/kadiri-daniel-3a6abb260/"
+    },
+
+    {
+      "icon": "/images/github.svg",
+      "url": "https://github.com/khadii"
+    }
+  ]
+}
