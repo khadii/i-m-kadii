@@ -1,5 +1,5 @@
 import React from "react";
-import {  JackInTheBox, } from "react-awesome-reveal";
+import {  Flip, } from "react-awesome-reveal";
 import { TbXboxXFilled } from "react-icons/tb";
 interface ModalProps {
   isOpen: boolean;
@@ -15,7 +15,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <div className="fixed inset-0 flex items-center justify-center z-50">
       {/* Background blur effect */}
       <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-md" onClick={onClose}></div>
-      <JackInTheBox >
+      <Flip >
       {/* Modal content */}
       <div className="bg-[#051A16] p-6 rounded-lg shadow-lg w-96 z-10 relative">
         <button
@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
           <TbXboxXFilled size={'24'} color="#F1875E" />
         </button>
         <div>{children}</div>
-      </div>   </JackInTheBox>
+      </div>   </Flip>
     </div>
   );
 };

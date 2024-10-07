@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useEffect, useState } from 'react';
 
@@ -23,6 +23,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
   useEffect(() => {
     let start: number;
     let animationFrame: number;
+    let timeoutId: NodeJS.Timeout;
 
     const animate = (timestamp: number) => {
       if (!start) start = timestamp;
@@ -33,12 +34,22 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
 
       if (newPercentage < percentage) {
         animationFrame = requestAnimationFrame(animate);
+      } else {
+        // Reset animation after a delay of 10 seconds (10000ms)
+        timeoutId = setTimeout(() => {
+          setAnimatedPercentage(0);
+          start = 0;
+          requestAnimationFrame(animate);
+        }, 5000);
       }
     };
 
     animationFrame = requestAnimationFrame(animate);
 
-    return () => cancelAnimationFrame(animationFrame);
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      clearTimeout(timeoutId);
+    };
   }, [percentage, duration]);
 
   return (

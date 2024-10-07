@@ -34,8 +34,8 @@
       "percentage": 85
     },
     {
-      "skill": "Node.js",
-      "percentage": 45
+      "skill": "SQL",
+      "percentage": 65
     },
     {
       "skill": "MongoDB",
@@ -74,31 +74,35 @@
   ],
   "projects": [
     {
+      "discription": " A web app designed to help passengers easily lodge flight complaints. Users can submit their issues, track complaint progress, and receive real-time responses, all in one chat. The app ensures swift resolution by connecting passengers directly with airline support teams.  ",
       "imageUrl": "/images/kadi.png",
-      "title": "lodge flight complain App",
+      "title": "lodge flight complain web App",
       "url": "https://flypalfe-main-15pafu4z6-khadi.vercel.app/"
     },
     {
+      "discription": "A restaurant platform that takes orders directly through WhatsApp for a hassle-free experience. Customers can browse the menu, place orders, and customize dishes all within the chat.   ",
       "imageUrl": "/images/RESTURANT.png",
       "title": "Resturant App",
       "url": "http://kadiriresturant.surge.sh/"
     },
     {
+      "discription": "A unique platform that facilitates seamless trading through WhatsApp. It allows users to  negotiate deals, and finalize transactions all within the familiar chat interface. ",
       "imageUrl": "/images/bebo.png",
       "title": "Crypto exchange App",
       "url": "https://bebocrypto.netlify.app/"
     },
-    {
+    { "discription": "A unique platform that facilitates seamless chating of workers. It allows users to  communicate, astill a work in progress. ",
       "imageUrl": "/images/KADIRI.png",
       "title": "Chat App",
       "url": "http://mykadiriapp.surge.sh/"
     },
     {
+      "discription": "A clothing e-commerce platform that lets you shop for desired clothing. Customers can browse collections, ask for sizing recommendations, and place orders right in the site. With personalized style advice and instant updates on deliveries, it makes fashion shopping easy and interactive. Secure payment options and order tracking ensure a smooth experience from start to finish.",
       "imageUrl": "/images/port.png",
       "title": "portfolio",
       "url": "http://kadirisportfolio.surge.sh/"
     },
-    {
+    { "discription": "A unique platform that facilitates seamless trading through WhatsApp. It allows users to  negotiate deals, and finalize transactions all within the familiar chat interface. ",
       "imageUrl": "/images/beboinprogress.png",
       "title": "Currently working on",
       "url": "https://tradewithbebo.netlify.app/"

@@ -6,7 +6,10 @@ import React, { useState, useRef } from "react";
 import { LuGithub } from "react-icons/lu";
 import Modal from "./Modal";
 import ContactForm from "./contact-form";
-import { Slide } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
+import { MessageCircleHeart, PhoneCall } from "lucide-react";
+import "animate.css/animate.min.css";
+import Link from "next/link";
 
 export default function Component() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -52,11 +55,67 @@ export default function Component() {
         </div>
       )}
       <div className="container mx-auto px-2 py-6 flex flex-row sm:flex-row justify-between items-center">
-        <div className="text-4xl md:text-5xl font-bold mb-4 md:mb-0">
-          KHADI<span className="text-[#F1875E]">.</span>
-        </div>
+        <Fade direction="left">
+          {" "}
+          <div className="text-4xl md:text-5xl font-bold mb-4 md:mb-0">
+            KHADI<span className="text-[#F1875E]">.</span>
+          </div>
+        </Fade>
+
         <div className="hidden sm:flex">
-          <div className="flex flex-row space-x-4 items-center">
+          <Fade direction="right">
+            <div className="flex flex-row space-x-4 items-center">
+              <AttentionSeeker
+                effect="heartBeat"
+                duration={2000}
+                className="animate__animated animate__heartBeat animate__infinite "
+              >
+                <div className="bg-white p-2 rounded-full">
+                  <Link href="tel:09017169102">
+                    <PhoneCall size={24} color="#F1875E" />
+                  </Link>
+                </div>
+              </AttentionSeeker>
+              <div className="bg-white p-2 rounded-full ">
+                <Link href="https://wa.link/j9wqk3">
+                  <MessageCircleHeart size={24} color="#F1875E" />
+                </Link>
+              </div>
+              <div className="bg-white p-2 rounded-full">
+                <Link href="https://www.linkedin.com/in/kadiri-daniel-3a6abb260/">
+                  <LuGithub size={24} color="#F1875E" />
+                </Link>
+              </div>
+              <AttentionSeeker
+                effect="heartBeat"
+                duration={2000}
+                className="animate__animated animate__heartBeat animate__infinite "
+              >
+                <div
+                  className="relative hidden md:block"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <button className="text-white font-bold bg-[#F1875E] px-4 py-2 rounded-lg">
+                    Contact me
+                  </button>
+                </div>
+              </AttentionSeeker>
+            </div>
+          </Fade>
+        </div>
+
+        <div className="sm:hidden" onClick={openModal}>
+          <Fade direction="right">
+            {" "}
+            <FiMenu size={28} color="#F1875E" />{" "}
+          </Fade>
+        </div>
+      </div>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <Slide direction="down">
+          <div className="sm:hidden flex flex-col items-center space-y-4 mt-4">
             <div className="bg-white p-2 rounded-full">
               <Image
                 src={"/images/ig.svg"}
@@ -66,51 +125,32 @@ export default function Component() {
               />
             </div>
             <div className="bg-white p-2 rounded-full">
-              <LuGithub size={24} color="#F1875E" />
+              <Link href="tel:09017169102">
+                <PhoneCall size={24} color="#F1875E" />
+              </Link>
             </div>
-            <div
-              className="relative hidden md:block"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+            <div className="bg-white p-2 rounded-full">
+              <Link href="https://wa.link/j9wqk3">
+                <MessageCircleHeart size={24} color="#F1875E" />
+              </Link>
+            </div>
+            <div className="bg-white p-2 rounded-full">
+              <Link href="https://www.linkedin.com/in/kadiri-daniel-3a6abb260/">
+                <LuGithub size={24} color="#F1875E" />
+              </Link>
+            </div>
+            <button
+              className="text-white font-bold bg-[#F1875E] px-4 py-2 rounded-lg"
+              onClick={toggleMobileDropdown}
             >
-              <button className="text-white font-bold bg-[#F1875E] px-4 py-2 rounded-lg">
-                Contact me
-              </button>
-            </div>
+              {isMobileDropdownOpen === false ? "Contact me" : "X"}
+            </button>
+            {isMobileDropdownOpen && (
+              <div className="w-full mt-4">
+                <ContactForm />
+              </div>
+            )}
           </div>
-        </div>
-        
-        <div className="sm:hidden" onClick={openModal}>
-          <FiMenu size={28} color="#F1875E" />
-        </div>
-      </div>
-
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-      <Slide direction="down">
-        <div className="sm:hidden flex flex-col items-center space-y-4 mt-4">
-          <div className="bg-white p-2 rounded-full">
-            <Image
-              src={"/images/ig.svg"}
-              alt="Instagram Icon"
-              width={24}
-              height={24}
-            />
-          </div>
-          <div className="bg-white p-2 rounded-full">
-            <LuGithub size={24} color="#F1875E" />
-          </div>
-          <button
-            className="text-white font-bold bg-[#F1875E] px-4 py-2 rounded-lg"
-            onClick={toggleMobileDropdown}
-          >
-           { isMobileDropdownOpen=== false ?'Contact me':"X"}
-          </button>
-          {isMobileDropdownOpen && (
-            <div className="w-full mt-4">
-              <ContactForm  />
-            </div>
-          )}
-        </div>
         </Slide>
       </Modal>
     </div>
