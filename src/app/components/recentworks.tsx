@@ -7,14 +7,14 @@ export const recentworks = data.projects.map((project, index) => ({
   component: (
     <div className="w-full flex flex-col md:flex-row justify-between">
       {/* Left Column */}
-      <div className="w-full md:w-[40%] flex flex-col justify-end pb-10 md:pb-20">
-        <p className="mb-5 md:mb-7 text-xl md:text-2xl font-bold">
+      <div className="w-full md:w-[40%] flex flex-col justify-end pb-8 md:pb-16">
+        <p className="mb-4 md:mb-6 text-lg md:text-2xl font-bold">
           {project.title}
         </p>
         <div className="w-full md:w-72">
           <p className="text-sm md:text-base">{project.discription}</p>
         </div>
-        <div className="w-full md:w-auto mt-4">
+        <div className="w-full mt-4 md:mt-6">
           <Link href={project.url}>
             <button className="bg-white font-bold text-[#F1875E] px-4 md:px-6 py-2 md:py-3 rounded-lg shadow-md hover:bg-[#f07850] transition-all duration-300 hover:text-white">
               Explore
@@ -24,9 +24,9 @@ export const recentworks = data.projects.map((project, index) => ({
       </div>
 
       {/* Right Column */}
-      <div className="w-full md:w-[60%] flex flex-col justify-center mt-10 md:mt-0">
+      <div className="w-full md:w-[60%] flex flex-col justify-center mt-8 md:mt-0">
         <div className="w-full flex justify-center pb-4">
-          <div className="w-[95%] md:w-[90%] h-64 md:h-80 mx-auto rounded-lg overflow-hidden">
+          <div className="w-[90%] sm:w-[90%] md:w-[90%] h-full min-h-[75vh] sm:min-h-[75vh] md:min-h-[75vh] mx-auto rounded-lg overflow-hidden">
             <Image
               src={project.imageUrl}
               alt={project.title}
@@ -36,7 +36,7 @@ export const recentworks = data.projects.map((project, index) => ({
             />
           </div>
         </div>
-        <p className="justify-center flex w-full text-xl md:text-2xl font-bold">
+        <p className="justify-center flex w-full text-lg md:text-2xl font-bold">
           {project.title}
         </p>
       </div>
