@@ -6,7 +6,7 @@ import RotationalRevealSlider from "./Slider";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 // import ContactForm from './contact-form';
 import Image from "next/image";
-import { LuGithub } from "react-icons/lu";
+
 import { Mail, MessageCircleHeart, PhoneCall } from "lucide-react";
 import Link from "next/link";
 // import { Slide } from 'react-awesome-reveal';

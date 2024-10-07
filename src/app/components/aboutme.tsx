@@ -23,7 +23,7 @@ export default function Aboutme() {
      // Update color every 2 seconds
      useEffect(() => {
        const intervalId = setInterval(() => {
-         setCurrentColorIndex((prevIndex:any) => (prevIndex + 1) % colors.length);
+         setCurrentColorIndex((prevIndex:number) => (prevIndex + 1) % colors.length);
        }, 2000);
    
        // Cleanup interval on unmount

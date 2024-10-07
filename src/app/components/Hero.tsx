@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Fade, Rotate } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Typewriter } from "react-simple-typewriter";
 
 // import React, { useState } from "react";
@@ -17,7 +17,7 @@ export default function Hero() {
     // Update color every 2 seconds
     useEffect(() => {
       const intervalId = setInterval(() => {
-        setCurrentColorIndex((prevIndex:any) => (prevIndex + 1) % colors.length);
+        setCurrentColorIndex((prevIndex:number) => (prevIndex + 1) % colors.length);
       }, 2000);
   
       // Cleanup interval on unmount
