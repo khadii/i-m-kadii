@@ -57,7 +57,7 @@ export default function Component() {
       <div className="container mx-auto px-2 py-6 flex flex-row sm:flex-row justify-between items-center">
         <Fade direction="left">
           {" "}
-          <div className="text-4xl md:text-5xl font-bold mb-4 md:mb-0">
+          <div className="text-4xl md:text-5xl font-bold mb-4 md:mb-0  text-white">
             KHADI<span className="text-[#F1875E]">.</span>
           </div>
         </Fade>

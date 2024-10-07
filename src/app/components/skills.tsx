@@ -20,7 +20,7 @@ export default function Skills() {
   <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center">
     {data.skills.map((item) => (
       <div
-        className="mx-4 my-2  flex flex-col items-center"
+        className="mx-4 my-2  flex flex-col items-center  text-white"
         key={item.percentage}
       >
         {/* Circular Progress for each skill */}

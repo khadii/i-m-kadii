@@ -62,10 +62,10 @@ export default function Hero() {
           <div className="flex flex-col space-y-3 sm:space-y-5 sm:w-1/2 w-full justify-center items-center sm:items-start text-center sm:text-left">
             {/* Text */}
             <div className="text-2xl sm:text-4xl md:text-6xl font-bold">
-            <Fade direction="right" triggerOnce><p className="hidden sm:block">
+            <Fade direction="right" triggerOnce><p className="hidden sm:block  text-white">
                Hey There,<br /> I’m Khadi
               </p></Fade> 
-              <Fade direction="up" triggerOnce >  <p className="sm:hidden">Hey There, I’m Khadi</p> </Fade> {/* Mobile view */}
+              <Fade direction="up" triggerOnce >  <p className="sm:hidden  text-white">Hey There, I’m Khadi</p> </Fade> {/* Mobile view */}
             </div>
 
             {/* Button */}
@@ -96,7 +96,7 @@ export default function Hero() {
         </p>
 
         {/* For medium screens */}
-        <p className="hidden sm:block md:hidden">
+        <p className="hidden sm:block md:hidden  text-white">
           <Typewriter
             words={[
               "A passionate web developer with expertise in creating dynamic and responsive web applications. With  years of experience in the industry, I have honed my skills in various technologies including HTML, CSS, JavaScript, React.js, and Next.js."
@@ -111,7 +111,7 @@ export default function Hero() {
         </p>
 
         {/* For large screens */}
-        <p className="hidden md:flex justify-end">
+        <p className="hidden md:flex justify-end  text-white">
           <Typewriter
             words={[
               "A passionate web developer with expertise in creating dynamic and responsive web applications. With years of experience in the industry, I have honed my skills in various technologies including HTML, CSS, JavaScript, React.js, and Next.js."
